@@ -70,19 +70,19 @@ function Home() {
                     item.table_menu_list?.[0]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] gap-5  w-full'>
-                            <div className='ms-1 me-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className='shrink-0 md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt=""  />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                    <img className='shrink-0 w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt=""  />
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p >{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
+                                <p className='sm:text-sm text-sm'> {dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
@@ -94,7 +94,7 @@ function Home() {
                             </div>
 
                             <div className="">
-                                <p className='sm:text-sm'>{dish.dish_calories} Calories</p>
+                                <p className='sm:text-sm text-sm font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
@@ -110,7 +110,7 @@ function Home() {
                     item.table_menu_list?.[1]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full'>
+                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 md:gap-6 gap-2 w-full border border-gray-300'>
 
                             <div className='ms-1'>
 
@@ -121,8 +121,8 @@ function Home() {
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p>{dish.dish_currency}{dish.dish_price}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
                                 <p>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
@@ -135,7 +135,7 @@ function Home() {
                             </div>
 
                             <div className="">
-                                <p>{dish.dish_calories} Calories</p>
+                                <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
@@ -151,7 +151,7 @@ function Home() {
                     item.table_menu_list?.[2]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full'>
+                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
 
                             <div className='ms-1'>
 
@@ -162,8 +162,8 @@ function Home() {
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p>{dish.dish_currency}{dish.dish_price}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
                                 <p>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
@@ -176,7 +176,7 @@ function Home() {
                             </div>
 
                             <div className="">
-                                <p>{dish.dish_calories} Calories</p>
+                                <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
@@ -192,7 +192,7 @@ function Home() {
                     item.table_menu_list?.[3]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full'>
+                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
 
                             <div className='ms-1'>
 
@@ -203,8 +203,8 @@ function Home() {
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p>{dish.dish_currency}{dish.dish_price}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
                                 <p>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
@@ -217,7 +217,7 @@ function Home() {
                             </div>
 
                             <div className="">
-                                <p>{dish.dish_calories} Calories</p>
+                                <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
@@ -233,7 +233,7 @@ function Home() {
                     item.table_menu_list?.[4]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full'>
+                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
 
 
                             <div className='ms-1'>
@@ -245,8 +245,8 @@ function Home() {
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p>{dish.dish_currency}{dish.dish_price}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
                                 <p>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
@@ -258,7 +258,7 @@ function Home() {
                                     <p className='text-red-500'>Not Available</p>}
                             </div>
                             <div className="">
-                                <p>{dish.dish_calories} Calories</p>
+                                <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
@@ -268,13 +268,14 @@ function Home() {
 
                 }
             </div>}
+          
 
             {six && <div className="">
                 {data?.data?.map((item) => (
                     item.table_menu_list?.[5]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full'>
+                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
 
                             <div className='ms-1'>
 
@@ -285,8 +286,8 @@ function Home() {
                                 }
                             </div>
                             <div className="">
-                                <h1>{dish.dish_name}</h1>
-                                <p>{dish.dish_currency}{dish.dish_price}</p>
+                                <h1 className='font-semibold'>{dish.dish_name}</h1>
+                                <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
                                 <p>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
@@ -299,7 +300,7 @@ function Home() {
                             </div>
 
                             <div className="">
-                                <p>{dish.dish_calories} Calories</p>
+                                <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
                                 <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
