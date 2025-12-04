@@ -122,7 +122,7 @@ function Home() {
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
                                 <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <p className='sm:text-sm text-sm'>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
@@ -162,7 +162,7 @@ function Home() {
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
                                 <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <p className='sm:text-sm text-sm'>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
@@ -203,7 +203,7 @@ function Home() {
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
                                 <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <p className='sm:text-sm text-sm'>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
@@ -243,7 +243,7 @@ function Home() {
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
                                 <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <p className='sm:text-sm text-sm'>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
@@ -283,7 +283,7 @@ function Home() {
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
                                 <p className='font-semibold'>{dish.dish_currency}{dish.dish_price}</p>
-                                <p>{dish.dish_description}</p>
+                                <p className='sm:text-sm text-sm'>{dish.dish_description}</p>
                                 {dish.dish_Availability == true &&
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
