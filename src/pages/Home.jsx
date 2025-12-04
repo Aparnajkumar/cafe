@@ -41,7 +41,7 @@ function Home() {
     return (
         <>
             <Header items={items} />
-            <div className="shadow p-1 flex  items-center overflow-x-auto  space-x-45 px-4 py-3">
+            <div className="shadow p-1 flex  items-center overflow-x-auto  space-x-20 md:space-x-45 px-4 py-3">
                 <div className={one ? "border-b  border-pink-600" : ""}>
                     <button onClick={() => { setone(true); settwo(false); setthree(false); setfour(false); setfive(false); setsix(false) }} className={one ? "text-pink-600  font-bold whitespace-nowrap" : "text-black whitespace-nowrap"}>Salads and Soups</button>
                 </div>
@@ -74,9 +74,9 @@ function Home() {
                             <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img className='shrink-0 md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt=""  />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img className='shrink-0 w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt=""  />
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
                                 }
                             </div>
                             <div className="">
@@ -110,14 +110,13 @@ function Home() {
                     item.table_menu_list?.[1]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 md:gap-6 gap-2 w-full border border-gray-300'>
-
-                            <div className='ms-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
                                 }
                             </div>
                             <div className="">
@@ -151,14 +150,13 @@ function Home() {
                     item.table_menu_list?.[2]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
-
-                            <div className='ms-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
                                 }
                             </div>
                             <div className="">
@@ -192,15 +190,15 @@ function Home() {
                     item.table_menu_list?.[3]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
-
-                            <div className='ms-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
-                                }
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
+                                }  <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+
                             </div>
                             <div className="">
                                 <h1 className='font-semibold'>{dish.dish_name}</h1>
@@ -233,15 +231,13 @@ function Home() {
                     item.table_menu_list?.[4]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
-
-
-                            <div className='ms-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
                                 }
                             </div>
                             <div className="">
@@ -268,21 +264,20 @@ function Home() {
 
                 }
             </div>}
-          
+
 
             {six && <div className="">
                 {data?.data?.map((item) => (
                     item.table_menu_list?.[5]?.category_dishes?.map((dish) => (
 
 
-                        <div className='  grid grid-cols-[.2fr_6fr_2fr_2fr] p-2 gap-6 w-full border border-gray-300'>
-
-                            <div className='ms-1'>
+                        <div className='  grid grid-cols-[1.2fr_6fr_2fr_2fr] md:grid-cols-[.2fr_6fr_2fr_2fr] md:gap-5 p-1  border border-gray-300'>
+                            <div className='ms-1 me-1 md-me-0 shrink-0'>
 
                                 {dish.dish_Type == 2 ?
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" style={{ width: "80px" }} />
+                                    <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
-                                    <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                    <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
                                 }
                             </div>
                             <div className="">
