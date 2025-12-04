@@ -97,7 +97,7 @@ function Home() {
                                 <p className='sm:text-sm text-sm font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
@@ -137,7 +137,7 @@ function Home() {
                                 <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
@@ -177,7 +177,7 @@ function Home() {
                                 <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
@@ -218,7 +218,7 @@ function Home() {
                                 <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
@@ -257,7 +257,7 @@ function Home() {
                                 <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
@@ -298,7 +298,7 @@ function Home() {
                                 <p className='font-semibold'>{dish.dish_calories} Calories</p>
                             </div>
                             <div className="flex justify-center">
-                                <img className='img-fluid' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
+                                <img className='rounded-xl' style={{ width: "100px", height: "100px" }} src={dish.dish_image} alt="img" />
                             </div>
                         </div>))
                 ))
