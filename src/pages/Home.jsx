@@ -41,23 +41,23 @@ function Home() {
     return (
         <>
             <Header items={items} />
-            <div className="shadow p-1 flex  items-center overflow-x-auto  space-x-20 md:space-x-45 px-4 py-3">
-                <div className={one ? "border-b  border-pink-600" : ""}>
-                    <button onClick={() => { setone(true); settwo(false); setthree(false); setfour(false); setfive(false); setsix(false) }} className={one ? "text-pink-600  font-bold whitespace-nowrap" : "text-black whitespace-nowrap"}>Salads and Soups</button>
+            <div  className="  flex  items-center overflow-x-auto no-scrollbar space-x-20 md:space-x-40 px-20 ">
+                <div className={one ? "border-b-2  border-pink-600 w-fit " : ""}>
+                    <button onClick={() => { setone(true); settwo(false); setthree(false); setfour(false); setfive(false); setsix(false) }} className={one ? "text-pink-600 font-semibold whitespace-nowrap" : "text-black whitespace-nowrap"}>Salads and Soups</button>
                 </div>
-                <div className={two ? " w-full border-b border-pink-600" : ""}>
+                <div className={two ? " w-full border-b-2 border-pink-600" : ""}>
                     <button onClick={() => { setone(false); settwo(true); setthree(false); setfour(false); setfive(false); setsix(false) }} className={two ? "whitespace-nowrap text-pink-600 font-semibold" : "text-black whitespace-nowrap"}>From The Barnyard</button>
                 </div>
-                <div className={three ? " w-full border-b border-pink-600" : ""}>
+                <div className={three ? " w-full border-b-2 border-pink-600" : ""}>
                     <button onClick={() => { setone(false); settwo(false); setthree(true); setfour(false); setfive(false); setsix(false) }} className={three ? "whitespace-nowrap text-pink-600 font-semibold" : "text-black whitespace-nowrap"}>From The Hen House</button>
                 </div>
-                <div className={four ? " w-full border-b border-pink-600" : ""}>
+                <div className={four ? " w-full border-b-2 border-pink-600" : ""}>
                     <button onClick={() => { setone(false); settwo(false); setthree(false); setfour(true); setfive(false); setsix(false) }} className={four ? "whitespace-nowrap text-pink-600 font-semibold" : "text-black whitespace-nowrap"}>Fresh From The Sea</button>
                 </div>
-                <div className={five ? " w-full border-b border-pink-600" : ""}>
+                <div className={five ? " w-full border-b-2 border-pink-600" : ""}>
                     <button onClick={() => { setone(false); settwo(false); setthree(false); setfour(false); setfive(true); setsix(false) }} className={five ? "whitespace-nowrap text-pink-600 font-semibold" : "text-black whitespace-nowrap"}>Biriyani</button>
                 </div>
-                <div className={six ? " w-full border-b border-pink-600" : ""}>
+                <div className={six ? " w-full border-b-2 border-pink-600" : ""}>
                     <button onClick={() => { setone(false); settwo(false); setthree(false); setfour(false); setfive(false); setsix(true) }} className={six ? "whitespace-nowrap text-pink-600 font-semibold" : "text-black whitespace-nowrap"}>Fast Food</button>
                 </div>
 
@@ -87,7 +87,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
@@ -127,7 +127,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
@@ -167,7 +167,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
@@ -197,7 +197,7 @@ function Home() {
                                     <img className=' md:w-8 w-8 ' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Veg_symbol.svg/2048px-Veg_symbol.svg.png" alt="" />
                                     :
                                     <img className=' w-6 md:w-6' src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" />
-                                }  <img src="https://www.pngkey.com/png/full/245-2459071_non-veg-icon-non-veg-symbol-png.png" alt="" style={{ width: "100px" }} />
+                                }
 
                             </div>
                             <div className="">
@@ -208,7 +208,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
@@ -248,7 +248,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
@@ -288,7 +288,7 @@ function Home() {
                                     <span className='bg-green-600 text-center text-white rounded-2xl'>
                                         <button onClick={() => dispatch(decrement(dish.dish_id))} className='p-2 text-xl'>-</button>
                                         {items[dish.dish_id] || 0}
-                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>:
+                                        <button onClick={() => dispatch(increment(dish.dish_id))} className='p-2 text-xl'>+</button>
                                     </span>}
                                 {dish.dish_Availability == true ? <p className='text-red-500'>Customization Available</p> :
                                     <p className='text-red-500'>Not Available</p>}
